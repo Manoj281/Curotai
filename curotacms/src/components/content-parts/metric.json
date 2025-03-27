@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_content_parts_metrics",
+  "info": {
+    "displayName": "Metric"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "Items": {
+      "displayName": "MetricItem",
+      "type": "component",
+      "repeatable": true,
+      "component": "content-parts.metric-item"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_content_parts_contents",
+  "info": {
+    "displayName": "Content",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Paragraph": {
+      "type": "blocks"
+    },
+    "Bulletpara": {
+      "displayName": "BulletPara",
+      "type": "component",
+      "repeatable": true,
+      "component": "content-parts.bullet-para"
+    }
+  }
+}

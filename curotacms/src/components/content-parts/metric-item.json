@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_content_parts_metric_items",
+  "info": {
+    "displayName": "MetricItem"
+  },
+  "options": {},
+  "attributes": {
+    "Value": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "string"
+    }
+  }
+}

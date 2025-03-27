@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_content_parts_section_titles",
+  "info": {
+    "displayName": "SectionTitle"
+  },
+  "options": {},
+  "attributes": {
+    "IntroductionTitle": {
+      "type": "string"
+    },
+    "WhyChooseTitle": {
+      "type": "string"
+    },
+    "MetricsTitle": {
+      "type": "string"
+    },
+    "FollowUpTitle": {
+      "type": "string"
+    },
+    "ConclusionTitle": {
+      "type": "string"
+    },
+    "TestimonialsTitle": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "featured_articles",
+  "info": {
+    "singularName": "featured-article",
+    "pluralName": "featured-articles",
+    "displayName": "FeaturedArticle",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Title",
+      "required": true
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "ReadingTime": {
+      "type": "integer"
+    },
+    "Content": {
+      "type": "blocks"
+    },
+    "Featured": {
+      "type": "boolean"
+    },
+    "Order": {
+      "type": "integer"
+    }
+  }
+}

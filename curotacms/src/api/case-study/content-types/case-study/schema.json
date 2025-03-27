@@ -1,0 +1,95 @@
+{
+  "kind": "collectionType",
+  "collectionName": "case_studies",
+  "info": {
+    "singularName": "case-study",
+    "pluralName": "case-studies",
+    "displayName": "CaseStudy",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Title",
+      "required": true
+    },
+    "TextColor": {
+      "type": "string",
+      "default": "#c97948"
+    },
+    "HoverColor": {
+      "type": "string",
+      "default": "#f0e0a2"
+    },
+    "Metrics": {
+      "displayName": "Metric",
+      "type": "component",
+      "repeatable": false,
+      "component": "content-parts.metric"
+    },
+    "ReadingTime": {
+      "type": "integer"
+    },
+    "Order": {
+      "type": "integer"
+    },
+    "Featured": {
+      "type": "boolean"
+    },
+    "MainImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Testimonial": {
+      "displayName": "Testimonial",
+      "type": "component",
+      "repeatable": true,
+      "component": "content-parts.testimonial"
+    },
+    "InitialIntroduction": {
+      "type": "blocks",
+      "required": false
+    },
+    "CarouselImg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Content": {
+      "displayName": "Content",
+      "type": "component",
+      "repeatable": true,
+      "component": "content-parts.content"
+    },
+    "CarouselHover": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

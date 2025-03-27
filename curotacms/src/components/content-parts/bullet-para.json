@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_content_parts_bullet_paras",
+  "info": {
+    "displayName": "BulletPara",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "BulletPara": {
+      "type": "blocks"
+    }
+  }
+}

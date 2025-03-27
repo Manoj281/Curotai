@@ -1,0 +1,37 @@
+/* App.css */
+/* Only app-specific styles that can't be handled by Tailwind */
+
+/* Example: Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Example: Any app-wide animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Example: App-specific utility classes that can't be handled by Tailwind */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
