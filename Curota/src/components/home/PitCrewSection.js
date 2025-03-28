@@ -38,7 +38,7 @@ const AIPitCrew = () => {
       </div>
 
       {/* Rest of your content... */}
-      <div className="pb-[80px] lg:pb-0 min-h-[67vh] max-w-[1440px] mx-[10px] sm:mx-auto xl:mr-[1.5%] flex flex-col lg:flex-row justify-between gap-0 px-7  lg:pl-10 md:gap-1 pt-0 sm:pt-[4vw]">
+      <div className="pb-[80px] lg:pb-0 min-h-[60vh] max-w-[1440px] mx-[10px] sm:mx-auto xl:mr-[1.5%] flex flex-col lg:flex-row justify-between gap-0 px-7  lg:pl-10 md:gap-1 pt-0 sm:pt-[4vw]">
         <div className="w-full lg:w-[45%] order-2 lg:order-1">
           <h2 className="text-3xl md:text-5xl font-bold text-[#cfebe7] mb-6">
             Your AI Pit Crew
@@ -52,7 +52,7 @@ const AIPitCrew = () => {
           <p className="text-lg text-white mb-8">
             At Curota.ai, we understand that accurate and precise data labeling is the cornerstone of successful AI/ML initiatives.
           </p>
-          <button className=" bg-white text-[#203e40] max-w-[300px] px-6 py-3 rounded-2xl mb-[30px] font-medium flex items-center justify-center gap-2 hover:bg-opacity-90 transition-all">
+          {/*<button className=" bg-white text-[#203e40] max-w-[300px] px-6 py-3 rounded-2xl mb-[30px] font-medium flex items-center justify-center gap-2 hover:bg-opacity-90 transition-all">
             <div className="inline">
             Client Stories
             </div>
@@ -74,7 +74,7 @@ const AIPitCrew = () => {
               />
             </svg>
             </div>
-          </button>
+          </button>*/}
         </div>
         <div className="w-full md:max-w-[50vw] xl:max-w-[25wv] max-h-[340px] h-[300px] sm:h-[600px] lg:h-auto order-1 lg:order-2 rounded-xl overflow-hidden mx-auto  xs:mb-[20px]">
           <div className="w-full h-[350px] sm:h-full bg-[url('../public/img/AiPit.png')] bg-contain bg-no-repeat mx-auto bg-center rounded-xl block lg:hidden"></div>

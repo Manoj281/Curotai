@@ -68,10 +68,10 @@ const Footer = () => {
               <h2 className="text-xl font-medium mb-6">Learn More</h2>
               <ul className="space-y-3">
                 <li><Link to="/about" className="hover:opacity-80 transition-opacity">About Us</Link></li>
-                <li><a href="https://yourcompany.com/press-releases" className="hover:opacity-80 transition-opacity">Press Releases</a></li>
+                {/*<li><a href="https://yourcompany.com/press-releases" className="hover:opacity-80 transition-opacity">Press Releases</a></li>
                 <li><a href="https://yourcompany.com/press-releases" className="hover:opacity-80 transition-opacity">Environment</a></li>
                 <li><a href="https://yourcompany.com/press-releases" className="hover:opacity-80 transition-opacity">Jobs</a></li>
-                <li><a href="https://yourcompany.com/press-releases" className="hover:opacity-80 transition-opacity">Privacy Policy</a></li>
+                <li><a href="https://yourcompany.com/press-releases" className="hover:opacity-80 transition-opacity">Privacy Policy</a></li>*/}
                 <li>
                   <div 
                     onClick={handleContactUsClick} 

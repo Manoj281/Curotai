@@ -22,9 +22,9 @@ const AccordionItem = ({ title, isOpen, onClick }) => (
 );
 
 // Service Example Card Component
-const ServiceExampleCard = () => (
-  <div className="bg-[#e4f6f3] rounded-lg p-4 h-32 flex items-center justify-center">
-    <div className="bg-[#95b5b1] w-24 h-10 rounded-lg"></div>
+const ServiceExampleCard = ({img}) => (
+  <div className=" rounded-lg p-4 h-[150px] flex items-center justify-center">
+    <img src={img} alt='servicesimg' className='h-full'/>
   </div>
 );
 
@@ -159,8 +159,8 @@ const ServicesPage = () => {
             <h3 className="text-2xl font-semibold text-[#203e40] mb-6">Segmentation</h3>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              <ServiceExampleCard />
-              <ServiceExampleCard />
+              <ServiceExampleCard img='/img/testimg.png'/>
+              <ServiceExampleCard img='/img/testimg.png'/>
             </div>
             
             <div className="mb-6">
@@ -187,8 +187,8 @@ const ServicesPage = () => {
             <h3 className="text-2xl font-semibold text-[#203e40] mb-6">Bounding Box</h3>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              <ServiceExampleCard />
-              <ServiceExampleCard />
+              <ServiceExampleCard img='/img/testimg.png'/>
+              <ServiceExampleCard img='/img/testimg.png'/>
             </div>
             
             <div className="mb-6">
@@ -215,8 +215,8 @@ const ServicesPage = () => {
             <h3 className="text-2xl font-semibold text-[#203e40] mb-6">Polygon</h3>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              <ServiceExampleCard />
-              <ServiceExampleCard />
+              <ServiceExampleCard img='/img/testimg.png'/>
+              <ServiceExampleCard img='/img/testimg.png'/>
             </div>
             
             <div className="mb-6">
@@ -243,8 +243,8 @@ const ServicesPage = () => {
             <h3 className="text-2xl font-semibold text-[#203e40] mb-6">Keypoint</h3>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              <ServiceExampleCard />
-              <ServiceExampleCard />
+              <ServiceExampleCard img='/img/testimg.png'/>
+              <ServiceExampleCard img='/img/testimg.png'/>
             </div>
             
             <div className="mb-6">
@@ -271,8 +271,8 @@ const ServicesPage = () => {
             <h3 className="text-2xl font-semibold text-[#203e40] mb-6">Image Classification</h3>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              <ServiceExampleCard />
-              <ServiceExampleCard />
+              <ServiceExampleCard img='/img/testimg.png'/>
+              <ServiceExampleCard img='/img/testimg.png'/>
             </div>
             
             <div className="mb-6">
@@ -310,6 +310,10 @@ const ServicesPage = () => {
           <div className="bg-white p-6">
           <div className="mb-12">
             <h3 className="text-2xl font-semibold text-[#203e40] mb-6">Bounding Box Annotation</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <ServiceExampleCard img='/img/testimg.png'/>
+              <ServiceExampleCard img='/img/testimg.png'/>
+            </div>
               <p className="text-[#203e40]/80">
               Identifies objects by placing rectangular boxes around them, useful for object detection and localization tasks (e.g., vehicles, pedestrians).
 
@@ -318,6 +322,10 @@ const ServicesPage = () => {
           </div>
           <div className="mb-12">
             <h3 className="text-2xl font-semibold text-[#203e40] mb-6">Polygon Annotation</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <ServiceExampleCard img='/img/testimg.png'/>
+              <ServiceExampleCard img='/img/testimg.png'/>
+            </div>
               <p className="text-[#203e40]/80">
               Outlines irregularly shaped objects precisely, beneficial for capturing accurate object boundaries in complex visual environments.
 
@@ -326,6 +334,10 @@ const ServicesPage = () => {
           </div>
           <div className="mb-12">
             <h3 className="text-2xl font-semibold text-[#203e40] mb-6">Semantic Segmentation</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <ServiceExampleCard img='/img/testimg.png'/>
+              <ServiceExampleCard img='/img/testimg.png'/>
+            </div>
               <p className="text-[#203e40]/80">
               Classifies every pixel in a frame into predefined categories (e.g., background, objects), useful for fine-grained scene understanding.
 
@@ -334,6 +346,10 @@ const ServicesPage = () => {
           </div>
           <div className="mb-12">
             <h3 className="text-2xl font-semibold text-[#203e40] mb-6">Instance Segmentation</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <ServiceExampleCard img='/img/testimg.png'/>
+              <ServiceExampleCard img='/img/testimg.png'/>
+            </div>
               <p className="text-[#203e40]/80">
               Identifies individual objects at a pixel-level, differentiating multiple instances of the same class in a frame (e.g., distinguishing multiple people in a crowd).
 
@@ -341,7 +357,10 @@ const ServicesPage = () => {
             
           </div>
           <div className="mb-12">
-            <h3 className="text-2xl font-semibold text-[#203e40] mb-6">IKey Point Annotation</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <ServiceExampleCard img='/img/testimg.png'/>
+              <ServiceExampleCard img='/img/testimg.png'/>
+            </div>
               <p className="text-[#203e40]/80">
               Marks important points on objects, often used in human pose estimation, facial recognition, and gesture analysis.
 
@@ -350,6 +369,10 @@ const ServicesPage = () => {
           </div>
           <div className="mb-12">
             <h3 className="text-2xl font-semibold text-[#203e40] mb-6">3D Cuboid Annotation</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <ServiceExampleCard img='/img/testimg.png'/>
+              <ServiceExampleCard img='/img/testimg.png'/>
+            </div>
               <p className="text-[#203e40]/80">
               Defines objects using 3D bounding boxes, helpful in autonomous driving, robotics, and drone navigation systems.
 
@@ -358,6 +381,10 @@ const ServicesPage = () => {
           </div>
           <div className="mb-12">
             <h3 className="text-2xl font-semibold text-[#203e40] mb-6">Polyline Annotation</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <ServiceExampleCard img='/img/testimg.png'/>
+              <ServiceExampleCard img='/img/testimg.png'/>
+            </div>
               <p className="text-[#203e40]/80">
               Draws continuous lines to represent linear objects such as roads, lanes, or boundaries, beneficial for navigation and autonomous driving scenarios.
 
@@ -366,6 +393,10 @@ const ServicesPage = () => {
           </div>
           <div className="mb-12">
             <h3 className="text-2xl font-semibold text-[#203e40] mb-6">Event Annotation (Temporal Annotation)</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <ServiceExampleCard img='/img/testimg.png'/>
+              <ServiceExampleCard img='/img/testimg.png'/>
+            </div>
               <p className="text-[#203e40]/80">
               Marks start and end timestamps of events or actions within videos, essential for activity recognition and behavior analysis.
 
