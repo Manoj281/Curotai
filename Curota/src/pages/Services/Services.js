@@ -23,8 +23,8 @@ const AccordionItem = ({ title, isOpen, onClick }) => (
 
 // Service Example Card Component
 const ServiceExampleCard = ({img}) => (
-  <div className=" rounded-lg p-4 h-[150px] flex items-center justify-center">
-    <img src={img} alt='servicesimg' className='h-full'/>
+  <div className="p-4 h-[150px] flex items-center justify-center">
+    <img src={img} alt='servicesimg' className='h-full rounded-lg'/>
   </div>
 );
 
@@ -34,8 +34,8 @@ const ImageClassificationSection = () => (
     <h3 className="text-2xl font-semibold text-[#203e40] mb-6">Image Classification</h3>
     
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-      <ServiceExampleCard />
-      <ServiceExampleCard />
+      <ServiceExampleCard img='/img/testimg.png'/>
+      <ServiceExampleCard img='/img/testimg.png'/>
     </div>
     
     <div className="mb-6">
