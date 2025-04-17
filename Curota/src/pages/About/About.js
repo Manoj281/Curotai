@@ -69,7 +69,7 @@ const AboutUs = () => {
     {
       avatar: "/img/Frame 260-5.png",
       name: "SOURAV KUMAR",
-      description: "Sourav Kumar, Co-Founder and CEO of Curota.ai, brings over years of expertise in consulting for global transport and logistics companies, blending technology, strategy, and leadership. With an MBA from WHU and global exposure at institutions like Columbia Business School, he is driving innovation and transformation in the logistics industry.",
+      description: "Sourav Kumar, Board Member at Curota.ai, brings over years of expertise in consulting for global transport and logistics companies, blending technology, strategy, and leadership. With an MBA from WHU and global exposure at institutions like Columbia Business School, he is driving innovation and transformation in the logistics industry.",
       location: "Düsseldorf, Germany",
       role: "Founding Board Member"
     }
