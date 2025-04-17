@@ -108,8 +108,8 @@ const Footer = () => {
                 <h2 className="text-xl font-medium mb-6">Contact Us</h2>
                 <div className="space-y-3">
                   <div className="flex gap-4">
-                    <span className="text-white/70 min-w-[120px]">Phone Number</span>
-                    <span className="font-medium">+91 7563069397</span>
+                    {/*<span className="text-white/70 min-w-[120px]">Phone Number</span>
+                    <span className="font-medium">+91 7563069397</span>*/}
                   </div>
                   <div className="flex gap-4">
                     <span className="text-white/70 min-w-[120px]">Email ID:</span>

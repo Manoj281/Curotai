@@ -4,8 +4,8 @@ const MetricsSection = () => {
   const metrics = [
     { value: '< 1 min', title: 'Average Per Object Time' },
     { value: '98%', title: 'Accuracy' },
-    { value: '100 objects/frame', title: 'Avg. Objects Segmented Per Frame' },
-    { value: 'As small as 10 pixels', title: 'Min. Object Size Segmented' }
+    { value: '100 objects/ frame', title: 'Avg. Objects Segmented Per Frame' },
+    { value: 'as small as 10 pixels', title: 'Min. Object Size Segmented' }
   ];
 
   return (
@@ -27,8 +27,8 @@ const MetricsSection = () => {
               {/* Metrics grid - 2x2 layout - Second on mobile, First on desktop */}
               <div className="grid grid-cols-2 gap-3  order-first lg:order-last pr-4">
                 {metrics.map((metric, index) => (
-                  <div key={index} className="text-[#203e40] border border-gray-200/50 p-2">
-                    <div className="text-xl md:text-[25px] font-bold mb-1 font-sans text-center">
+                  <div key={index} className="text-[#203e40] border border-gray-200/50 p-2 whitespace-normal break-words">
+                    <div className="text-xl md:text-[25px] font-bold mb-1 sm:mb-2 font-sans text-center">
                       {metric.value}
                     </div>
                     <div className="text-sm md:text-[16px] text-center">
