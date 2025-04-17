@@ -4,7 +4,7 @@ import HeroSection from '../../components/home/HeroSection';
 import PitCrewSection from '../../components/home/PitCrewSection';
 import WelcomeSection from '../../components/home/AnnotationServices';
 import WelcomeToCurota from '../../components/home/WelcomeToCurota';
-import Cast from '../../components/home/Cast';
+//import Cast from '../../components/home/Cast';
 import CaseStudies from '../../components/home/CaseStudies';
 import FeaturedArticles from '../../components/home/FeaturedArticles';
 import Ourservices from '../../components/home/Ourservices';
@@ -22,7 +22,7 @@ const Home = () => {
         <WelcomeSection />
         <Matrix/>
         <CaseStudies/>
-
+        <FeaturedArticles/>
       </div>
     </div>
   );
