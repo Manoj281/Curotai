@@ -47,7 +47,7 @@ jobs:
     
     steps:
     - name: List directory structure
-      run: ls
+      run: pwd
       
     - name: Build
       working-directory: ./Curota
