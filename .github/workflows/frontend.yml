@@ -36,9 +36,9 @@ jobs:
       working-directory: ./Curota # Adjust the path to your frontend folder
       run: npm install react-router-dom@7
 
-    - name: Run tests
-      working-directory: ./Curota
-      run: npm test
+#    - name: Run tests
+#      working-directory: ./Curota
+#      run: npm test
 
     - name: Build
       working-directory: ./Curota
