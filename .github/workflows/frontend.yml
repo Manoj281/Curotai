@@ -3,10 +3,10 @@ name: Frontend CI/CD
 on:
   push:
     branches:
-      - main
+      - feature/CICD
   pull_request:
     branches:
-      - main
+      - feature/CICD
 
 jobs:
   build:
