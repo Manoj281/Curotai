@@ -40,8 +40,10 @@ jobs:
 #      working-directory: ./Curota
 #      run: npm test
 
-  build:
+  Build:
     runs-on: ubuntu-latest
+    needs:
+      - Install
     
     steps:
     - name: Build
@@ -50,7 +52,10 @@ jobs:
 
   Deploy:
     runs-on: ubuntu-latest
-    
+    needs:
+      - Install
+      - Build
+        
     steps:
     - name: Deploy
       run: |
