@@ -42,7 +42,7 @@ jobs:
 
     - name: Build
       working-directory: ./Curota
-      run: npm run build
+      run: yarn build
 
     - name: Deploy
       run: |
