@@ -19,11 +19,12 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '14' # Use the appropriate Node.js version
+        node-version: '22' # Use the appropriate Node.js version
 
     - name: Install dependencies
       working-directory: ./Curota # Adjust the path to your frontend folder
-      run: npm install
+ #     run: npm install
+      run: npm install --save-dev jest @testing-library/react @testing-library/jest-dom
 
     - name: Run tests
       working-directory: ./Curota
