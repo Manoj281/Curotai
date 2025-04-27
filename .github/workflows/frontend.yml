@@ -9,7 +9,7 @@ on:
       - feature/CICD
 
 jobs:
-  Install:
+  Build:
     runs-on: ubuntu-latest
 
     steps:
@@ -39,27 +39,29 @@ jobs:
 #    - name: Run tests
 #      working-directory: ./Curota
 #      run: npm test
-
-  Build:
-    runs-on: ubuntu-latest
-    needs:
-      - Install
-    
-    steps:
-    - name: List directory structure
-      run: pwd
       
     - name: Build
       working-directory: ./Curota
       run: yarn build
+      
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: build-artifacts
+        path: ./Curota/build
 
   Deploy:
-    runs-on: ubuntu-latest
-    needs:
-      - Install
-      - Build
+    runs-on: ubuntu-latestls
+    needs: Build
         
     steps:
+    - name: Download build artifacts
+      uses: actions/download-artifact@v2
+      with:
+        name: build-artifacts
+        
     - name: Deploy
       run: |
+        cd build
+        ls
         echo "Add deployment commands here" # Replace with your deployment steps
