@@ -9,7 +9,7 @@ on:
       - feature/CICD
 
 jobs:
-  build:
+  Install:
     runs-on: ubuntu-latest
 
     steps:
@@ -40,10 +40,18 @@ jobs:
 #      working-directory: ./Curota
 #      run: npm test
 
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
     - name: Build
       working-directory: ./Curota
       run: yarn build
 
+  Deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
     - name: Deploy
       run: |
         echo "Add deployment commands here" # Replace with your deployment steps
